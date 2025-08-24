@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buscador de Livros</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Buscador de Livros</h1>
-      <form id="search-form">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Digite o título do livro..."
-          required
-        />
-        <button type="submit">Buscar</button>
-      </form>
-    </header>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFinder - Busca de Livros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-book"></i> BookFinder</h1>
+            <p>Descubra livros incríveis usando a Open Library API</p>
+        </header>
 
-    <main id="results-container" class="book-grid"></main>
+        <div class="search-container">
+            <form class="search-form" id="search-form">
+                <div class="form-group">
+                    <label for="title, author, subject"><i class="fas fa-heading"></i> Título</label>
+                    <input type="text" id="title" placeholder="Ex: Harry Potter, J.K. Rowling, Fantasy">
+                </div>
+                </div>
+                <button type="submit"><i class="fas fa-search"></i> Buscar Livros</button>
+            </form>
+        </div>
+
+        <div class="loader" id="loader">
+            <div class="loader-spinner"></div>
+            <p>Buscando livros...</p>
+        </div>
+
+        <div class="results-container" id="results-container">
+            <!-- Os resultados serão inseridos aqui via JavaScript -->
+        </div>
+
+        <footer>
+            <p>Desenvolvido com a Open Library API | &copy; 2023 BookFinder</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
