@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Informações do Artista</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Livros</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Informações do Artista</h1>
-        <form>
-          <input
-            id="artistName"
-            type="text"
-            placeholder="Digite o nome de um artista..."
-          />
-          <button
-            type="button"
-            onclick="searchArtist(document.getElementById('artistName').value)"
-          >
-            Buscar
-          </button>
-        </form>
-      </div>
-      <div class="content">
-        <h3 id="artist-title"></h3>
-        <p id="bio"></p>
-        <div id="top-albums-container">
-          <h4>Álbuns Populares</h4>
-          <div id="albums-list"></div>
-        </div>
-      </div>
-    </div>
-    <script src="main.js"></script>
+    <header>
+      <h1>Buscador de Livros</h1>
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Digite o título do livro..."
+          required
+        />
+        <button type="submit">Buscar</button>
+      </form>
+    </header>
+
+    <main id="results-container" class="book-grid"></main>
+
+    <script src="script.js"></script>
   </body>
 </html>
