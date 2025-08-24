@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const resultsContainer = document.getElementById("results-container");
   const resultsInfo = document.getElementById("results-info");
   const loader = document.getElementById("loader");
-  const examples = document.querySelectorAll(".example");
 
   // Função para traduzir gêneros comuns para português
   function translateGenre(genre) {
@@ -225,14 +224,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Buscar livros
     searchBooks(query);
-  });
-
-  // Adicionar eventos aos exemplos
-  examples.forEach((example) => {
-    example.addEventListener("click", function () {
-      searchInput.value = this.textContent;
-      searchBooks(this.textContent);
-    });
   });
 
   // Buscar alguns livros iniciais de autores brasileiros
