@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const apiKey = "ce5fd9d400dd5b3d4e7c4927bd42a8c4"; // <-- Insira sua chave de API da Last.fm aqui
+    const apiKey = "ce5fd9d400dd5b3d4e7c4927bd42a8c4"; // <-- chave de API da last.fm
     const apiUrl = `https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${encodeURIComponent(
       artistName
     )}&api_key=${apiKey}&format=json`;
