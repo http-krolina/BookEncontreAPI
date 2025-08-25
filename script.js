@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ${
                       coverUrl
                         ? `<img src="${coverUrl}" alt="${title}">`
-                        : `<div class="no-cover">Capa não disponível</div>`
+                        : `<div class="no-cover">Capa indisponível</div>`
                     }
                 </div>
                 <div class="book-info">
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ${
                       coverUrl
                         ? `<img src="${coverUrl}" alt="${title}">`
-                        : `<div class="no-cover">Capa não disponível</div>`
+                        : `<div class="no-cover">Capa indisponível</div>`
                     }
                 </div>
                 <div class="book-info">
