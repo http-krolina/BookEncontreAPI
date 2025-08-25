@@ -27,6 +27,8 @@ header {
 }
 
 header h1 {
+  text-align: center;
+  padding: auto;
   font-size: 4rem;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -69,7 +71,7 @@ header p {
 
 .search-box button {
   background: #550b14;
-  color: #000;
+  color: #cbc0b2;
   border-color: #cbc0b2;
   border-radius: 0.8rem;
   border-width: 0.2rem;
@@ -143,7 +145,7 @@ header p {
 .book-title {
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: #000;
+  color: #cbc0b2;
 }
 
 .book-author {
@@ -229,7 +231,7 @@ footer {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 4;
   }
 }
 
