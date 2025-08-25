@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Verificar se o campo foi preenchido
     if (!query) {
-      alert("Por favor, digite algo para buscar.");
+      alert("Campo em branco! Digite algo.");
       return;
     }
 
